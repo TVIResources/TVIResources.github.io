@@ -3,6 +3,29 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+## Overview
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+TVI (Text and Visual Information) Resources is built for teachers — especially those early in their careers — who want straightforward, ready-to-use materials for students who are blind or visually impaired. If you're wondering where to find practical classroom aids, sample lessons, tactile graphics, or scripts to generate accessible materials, this site pulls those resources together in one place.
+
+We focus on low-cost, high-impact options: printable templates, 3D-printable tactile objects, step-by-step classroom instructions, and simple scripts you can run with minimal setup. The goal is to save you prep time and give you tools that actually work in busy classrooms, not research papers or expensive commercial products.
+
+
+## Why Open Source Resources?
+
+Open, shared resources make it easier for teachers to adapt, reuse, and improve classroom materials. We know many teachers can't afford specialized commercial equipment, so this collection prioritizes items you can print, build, or repurpose affordably.
+
+When educators share tools and examples, we all benefit — you gain tested ideas you can use tomorrow, and others gain from your real-world feedback. If you try a resource here, please add a short note to its page about how it worked in your classroom (what students liked, what to change). Those short, practical reports help other teachers make quick decisions.
+
+
+## Licenses, etc
+
+The text descriptions on this site are licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). You are free to share and adapt the text as long as you provide appropriate credit, indicate if changes were made, and do not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+All linked resources are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0.txt).
+What that means for you:
+
+- You're free to use, modify, and redistribute these materials — including in commercial or for-profit settings — as long as you keep the license and attribution notices intact.
+- You can adapt or build on the resources for classroom use, product development, or other projects; you do not need to open-source your derivative works, but you must not remove the existing license text from materials you redistribute.
+- The license also provides an express patent grant from contributors, which reduces legal uncertainty for users and developers.
+
+All resources are provided "as is," without warranty of any kind, so please review the full license for details and limitations.

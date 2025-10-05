@@ -1,0 +1,5 @@
+allowedFields: ["name", "email", "message"]
+requiredFields: ["name", "email", "message"]
+branch: "main"
+path: "_data/comments"
+name: "TVIResources"
