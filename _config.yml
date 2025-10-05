@@ -17,9 +17,12 @@ title: TVI Resources
 email: ryhunsaker@dsdsmail.net
 description: >-
   Practical resources for teachers of students with visual impairments
+url: "https://tviresources.github.io"
+copyright: "© 2025 TVI Resources"
 github_username: TVIResources
-minimal_mistakes_skin: "aqua"
+minimal_mistakes_skin: "air"
 search: true
+search_full_content: true
 repository: TVIResources/TVIResources.github.io
 
 # Build settings
@@ -29,7 +32,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "MDT"
 
 include:
   - _pages
@@ -60,6 +63,7 @@ author:
   name   : "Michael Ryan Hunsaker, M.Ed., Ph.D."
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Behavioral Neuroscientist who became a Teacher for Studrnts with Visual Impairments who loves to teach and write about assistive technology, visual impairments, and accessibility."
+  email: "ryhunsaker@dsdmail.net"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -73,6 +77,7 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
+
 
 defaults:
   # _posts
@@ -120,3 +125,5 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
