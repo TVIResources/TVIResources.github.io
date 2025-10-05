@@ -18,7 +18,7 @@ email: ryhunsaker@dsdsmail.net
 description: >-
   Practical resources for teachers of students with visual impairments
 github_username: TVIResources
-minimal_mistakes_skin: contrast
+minimal_mistakes_skin: air
 search: true
 repository: TVIResources/TVIResources.github.io
 
@@ -96,22 +96,24 @@ defaults:
 
 comments:
   enabled: true
-  provider: giscus
-  giscus:
-    repo_id: "R_kgDOP8sYfA"
-    category_name: "General"
-    category_id: "DIC_kwDOP8sYfM4CwR22"
-    discussion_term: "pathname"
-    reactions_enabled: 0
-    theme: "light"
-    strict: 1
-    input_position: "top"
-    emit_metadata: 1
-    lang: "en"
-    lazy: false
-  #staticman:
-    #branch               : "main""
-    #endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+  provider: staticman_v2
+  staticman:
+    branch                : "main"
+    endpoint              : "https://staticman3.herokuapp.com/v3/entry/TVIResources/TVIResources.github.io/main"
+    commit_message        : "New comment from {{ fields.name }}"
+    filename              : comment-{@timestamp}
+    format                : "yml"
+    moderation: true
+    allowedFields         : ["name", "email", "message"]
+    requiredFields        : ["name", "email", "message"]
+    path                  : "_data/comments"
+    transforms            :
+      email               : "md5"
+    generatedFields:
+      date: 
+        type: "date"
+        options:
+          format: "iso8601"
 category_archive:
   type: liquid
   path: /categories/

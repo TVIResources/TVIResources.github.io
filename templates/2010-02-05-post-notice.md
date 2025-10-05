@@ -68,18 +68,4 @@ Or you could skip the capture and stick with straight HTML.
 </div>
 
 
-<script src="https://giscus.app/client.js"
-        data-repo="TVIResources/TVIResources.github.io"
-        data-repo-id="R_kgDOP8sYfA"
-        data-category="General"
-        data-category-id="DIC_kwDOP8sYfM4CwR22"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="1"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+{% include staticman-form.html %} 

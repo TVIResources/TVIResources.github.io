@@ -31,18 +31,4 @@ Of all delectable islands the Neverland is the snuggest and most compact, not la
 
 Occasionally in her travels through her children's minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael's minds, while Wendy's began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.
 
-<script src="https://giscus.app/client.js"
-        data-repo="TVIResources/TVIResources.github.io"
-        data-repo-id="R_kgDOP8sYfA"
-        data-category="General"
-        data-category-id="DIC_kwDOP8sYfM4CwR22"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="1"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+{% include staticman-form.html %} 

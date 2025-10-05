@@ -5,7 +5,7 @@ title: "About"
 
 ## Overview
 
-TVI (Text and Visual Information) Resources is built for teachers — especially those early in their careers — who want straightforward, ready-to-use materials for students who are blind or visually impaired. If you're wondering where to find practical classroom aids, sample lessons, tactile graphics, or scripts to generate accessible materials, this site pulls those resources together in one place.
+TVI Resources is built for teachers who want straightforward, ready-to-use materials for students who are blind or visually impaired. If you're wondering where to find practical classroom aids, sample lessons, tactile graphics, or scripts to generate accessible materials, this site pulls those resources together in one place.
 
 We focus on low-cost, high-impact options: printable templates, 3D-printable tactile objects, step-by-step classroom instructions, and simple scripts you can run with minimal setup. The goal is to save you prep time and give you tools that actually work in busy classrooms, not research papers or expensive commercial products.
 
