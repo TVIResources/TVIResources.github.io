@@ -18,7 +18,7 @@ email: ryhunsaker@dsdsmail.net
 description: >-
   Practical resources for teachers of students with visual impairments
 github_username: TVIResources
-minimal_mistakes_skin: air
+minimal_mistakes_skin: "aqua"
 search: true
 repository: TVIResources/TVIResources.github.io
 
