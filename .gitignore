@@ -1,4 +1,42 @@
-_site
-.sass-cache
+# Jekyll build output & caches
+_site/
 .jekyll-metadata
-Gemfile.lock
+.sass-cache/
+
+# Bundler / Ruby local installs
+.bundle/
+vendor/bundle/
+vendor/cache/
+pkg/
+*.gem
+
+# Logs and temp files
+log/
+tmp/
+
+# Ruby version managers / envs
+.ruby-version
+.ruby-gemset
+
+# Node dependencies (if you use node tooling)
+node_modules/
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Test & coverage
+coverage/
+.byebug_history
+
+# Local environment files
+.env
+.env.*
+
+# Keep Gemfile.lock tracked for reproducible builds
+# (Uncomment the following line if you intentionally don't want it tracked)
+# Gemfile.lock
