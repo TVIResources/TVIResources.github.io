@@ -17,14 +17,14 @@ title: TVI Resources
 email: ryhunsaker@dsdsmail.net
 description: >-
   Practical resources for teachers of students with visual impairments
-url: "https://tviresources.github.io"
+url: https://tviresources.github.io
 copyright: "© 2025 TVI Resources"
 github_username: TVIResources
 minimal_mistakes_skin: "air"
 search: true
 search_full_content: true
 repository: TVIResources/TVIResources.github.io
-
+future: false
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
