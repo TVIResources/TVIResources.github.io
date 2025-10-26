@@ -1,5 +1,6 @@
 ---
-title: "3D Printed Objects for Teaching Screen Layouts"
+title: "Pockect Money Embosser for the Visually Impaired"
+excerpt_separator: "<!--more-->"
 date: 2025-12-31
 categories:
   - blog
@@ -16,4 +17,4 @@ search: exclude
 
 
 
-{% include staticman-form.html %} 
+{% include staticman-form.html %}

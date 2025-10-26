@@ -1,5 +1,6 @@
 ---
 title: "Student Data Collection GUI"
+excerpt_separator: "<!--more-->"
 date: 2026-12-31
 categories:
   - blog
@@ -20,4 +21,4 @@ In everyday use, an instructor creates or opens a student record, adds dated ses
 
 Longitudinal data — repeated, consistently recorded observations over time — is essential when teaching skills like braille, independent technology use, and other vision-specific competencies. These skills develop incrementally and can be highly sensitive to small changes in instruction, tools, or health; a single snapshot can’t show growth, regression, or the effect of an adjustment in teaching strategy or assistive technology. By collecting dated measures and qualitative notes, teams can spot trends, detect plateaus or regressions early, evaluate which interventions work, and provide objective evidence for individualized programming and decision making. StudentDataGUI makes that practical by keeping the historical trail structured and searchable so educators can focus on instruction rather than record-keeping.
 
-{% include staticman-form.html %} 
+{% include staticman-form.html %}

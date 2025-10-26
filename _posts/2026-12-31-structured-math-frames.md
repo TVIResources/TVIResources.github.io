@@ -1,5 +1,6 @@
 ---
 title: "Structured Math Frames for UEB, Nemeth, and Print"
+excerpt_separator: "<!--more-->"
 date: 2026-12-31
 categories:
   - blog
@@ -25,7 +26,7 @@ The project includes 3D-print files for a small lidded carrier and number tiles 
 ### Example images
 
 - Addition/Subtraction Frame (UEB braille)
-  ![Addition/Subtraction Frame](/assets/images/structured-math-frames/addSubtractFrame.png)  
+  ![Addition/Subtraction Frame](/assets/images/structured-math-frames/addSubtractFrame.png)
 - Multiplication Frame (UEB braille)
   ![Multiplication Frame](/assets/images/structured-math-frames/MultiplicationFrame.png)
 - Division Frame (UEB braille)

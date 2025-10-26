@@ -49,4 +49,4 @@ If you adapt or improve a resource here, please share your files, short notes, o
 
 By keeping costs low and opening up the how-to, TVI Resources aims to empower teachers, amplify practical innovations, and create a living library of tools that grow with classroom experience.
 
-{% include staticman-form.html %} 
+{% include staticman-form.html %}

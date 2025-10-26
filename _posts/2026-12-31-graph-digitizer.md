@@ -1,5 +1,6 @@
 ---
 title: "Program for Digitizing Graphs into Data Points"
+excerpt_separator: "<!--more-->"
 date: 2026-12-31
 categories:
   - blog
@@ -19,4 +20,4 @@ Many published or embedded graphs are effectively inaccessible: the numeric data
 
 Quick usage: start the app (julia --project=@. graph_digitizer.jl or call run_app()), load an image, run Calibrate Clicks (click X-left, X-right, Y-bottom, Y-top), enter X/Y min/max and Apply Calibration, then add points by left-clicking (drag to move, right-click/delete to remove). Use Auto Trace for a selected dataset to auto-sample by color, and save results via Save (Ctrl+S) which writes JSON and the wide CSV; use File → Exit or Ctrl+Q to quit cleanly.
 
-{% include staticman-form.html %} 
+{% include staticman-form.html %}

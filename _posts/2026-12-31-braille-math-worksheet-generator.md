@@ -1,5 +1,6 @@
 ---
 title: "Braille Math Worksheet Generator (UEB)"
+excerpt_separator: "<!--more-->"
 date: 2026-12-31
 categories:
   - blog
@@ -34,6 +35,6 @@ Further instructions and details about the script's functionality can be found i
 
 ## Customization and Contribution
 
-You are free to go in and modify the script to better suit your needs. The project is open-source, and contributions are welcome. If you have ideas for new features or improvements, or if you find any bugs, please let us know by [submitting an issue on GitHub here](https://github.com/TVIResources/BrailleMathWorksheetGenerator) or leaving a comment below. I appreciate your feedback and will do my best to address any issues promptly. 
+You are free to go in and modify the script to better suit your needs. The project is open-source, and contributions are welcome. If you have ideas for new features or improvements, or if you find any bugs, please let us know by [submitting an issue on GitHub here](https://github.com/TVIResources/BrailleMathWorksheetGenerator) or leaving a comment below. I appreciate your feedback and will do my best to address any issues promptly.
 
 {% include staticman-form.html %}

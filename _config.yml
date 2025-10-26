@@ -16,9 +16,9 @@
 title: TVI Resources
 email: ryhunsaker@dsdsmail.net
 description: >-
-  Practical resources for teachers of students with visual impairments
+    Practical resources for teachers of students with visual impairments
 url: https://tviresources.github.io
-copyright: "© 2025 TVI Resources"
+copyright: "TVI Resources"
 github_username: TVIResources
 minimal_mistakes_skin: "air"
 search: true
@@ -33,97 +33,94 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "America/Denver"
-
 include:
-  - _pages
-
+    - _pages
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-   - Gemfile
-   - Gemfile.lock
-   - node_modules
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
-   - templates/
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - vendor/bundle/
+    - vendor/cache/
+    - vendor/gems/
+    - vendor/ruby/
+    - templates/
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-feed
+    - jemoji
+    - jekyll-include-cache
 
 author:
-  name   : "Michael Ryan Hunsaker, M.Ed., Ph.D."
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Behavioral Neuroscientist who became a Teacher for Studrnts with Visual Impairments who loves to teach and write about assistive technology, visual impairments, and accessibility."
-  email: "ryhunsaker@dsdmail.net"
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://tviresources.github.io"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mrhunsaker"
+    name: "Michael Ryan Hunsaker, M.Ed., Ph.D."
+    avatar: "/assets/images/bio-photo.jpg"
+    bio: "Behavioral Neuroscientist who became a Teacher for Students with Visual Impairments who loves to teach and write about assistive technology, visual impairments, and accessibility.\n\nAll 3D Prints printed using a Bambu Labs P1S 3D Printer\n\nAll software is meant to be cross platform unless explicitly stated"
+    email: "ryhunsaker@dsdmail.net"
+    links:
+        - label: "Website"
+          icon: "fas fa-fw fa-link"
+          url: "https://tviresources.github.io"
+        - label: "GitHub"
+          icon: "fab fa-fw fa-github"
+          url: "https://github.com/mrhunsaker"
 
 footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/tviresources"
-
+    links:
+        - label: "GitHub"
+          icon: "fab fa-fw fa-github"
+          url: "https://github.com/TVIResources"
 
 defaults:
-  # _posts
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
+    # _posts
+    - scope:
+          path: "_posts"
+          type: posts
+      values:
+          layout: single
+          author_profile: true
+          read_time: true
+          comments: true
+          share: true
+          related: true
+    # _pages
+    - scope:
+          path: "_pages"
+          type: pages
+      values:
+          layout: single
+          author_profile: true
 
 comments:
-  enabled: true
-  provider: staticman_v2
-  staticman:
-    branch                : "main"
-    endpoint              : "https://staticman3.herokuapp.com/v3/entry/TVIResources/TVIResources.github.io/main"
-    commit_message        : "New comment from {{ fields.name }}"
-    filename              : comment-{@timestamp}
-    format                : "yml"
-    moderation: true
-    allowedFields         : ["name", "email", "message"]
-    requiredFields        : ["name", "email", "message"]
-    path                  : "_data/comments"
-    transforms            :
-      email               : "md5"
-    generatedFields:
-      date: 
-        type: "date"
-        options:
-          format: "iso8601"
+    enabled: true
+    provider: staticman_v2
+    staticman:
+        branch: "main"
+        endpoint: "https://staticman3.herokuapp.com/v3/entry/TVIResources/TVIResources.github.io/main"
+        commit_message: "New comment from {{ fields.name }}"
+        filename: comment-{@timestamp}
+        format: "yml"
+        moderation: true
+        allowedFields: ["name", "email", "message"]
+        requiredFields: ["name", "email", "message"]
+        path: "_data/comments"
+        transforms:
+            email: "md5"
+        generatedFields:
+            date:
+                type: "date"
+                options:
+                    format: "iso8601"
 category_archive:
-  type: liquid
-  path: /categories/
+    type: liquid
+    path: /categories/
 tag_archive:
-  type: liquid
-  path: /tags/
+    type: liquid
+    path: /tags/
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
