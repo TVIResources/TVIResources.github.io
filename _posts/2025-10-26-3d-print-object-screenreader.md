@@ -187,5 +187,3 @@ design = "CavasDashboard"; // [
 - Once the model is rendered, press `F7` to save the 3D model file as an stl file. Name the file according to your design (e.g., `MYNEWDESIGN.stl`) and save it in the `Final3dPrintFiles` folder.
 
 If any of this is too difficult feel free to post a comment below and/or  [contact me](mailto:ryhunsaker@dsdmail.net?subject=Tactile%20Graphics%20For%20Screenreaders%20Question) and I can answer any questions directly.
-
-{% include staticman-form.html %}

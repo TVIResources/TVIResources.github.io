@@ -30,4 +30,3 @@ Always check for transfer: ask students to describe a similar real intersection 
 These simple overhead models give students a reliable, repeatable tactile experience of spatial forms that are otherwise fleeting and complex. That tactile domain is a powerful bridge from instruction to independent, confident travel.
 
 
-{% include staticman-form.html %}
