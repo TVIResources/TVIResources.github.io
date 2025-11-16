@@ -16,13 +16,13 @@ These structured math frames grew out of a common and persistent challenge: visu
 
 Multiplication introduces a particularly tricky hurdle: when multiplying by the tens or hundreds digit a student must conceptually and physically "add" zeros to the far right of intermediate partial products before summing. On a Perkins braillewriter this means the student must either pre-format the line with trailing placeholders or later shift focus to ensure zeros are placed correctly — a task that interrupts the math and increases errors. These frames are intended to reduce the burden of braille formatting so the student can concentrate on the mathematical reasoning rather than the layout mechanics.
 
-## Features of the Braille Math Worksheet Generator
+## Features of the Structured Math Frames
 
 These are simple, ready-to-use frames that help students line up numbers the way they do on graph paper. Each frame supports addition, subtraction, multiplication, or division and shows separate columns for ones, tens, hundreds, and thousands so digits stay under the correct place value. A clear spot is provided for the operation sign (plus, minus, times, divide) so students only need to focus on the math, not the layout.
 
 For addition and subtraction the frame includes a horizontal line to separate the problem from the answer area. The multiplication frame provides extra rows for the intermediate partial products and a final answer line, making it easier for students to place digits and trailing zeros in the right spot. Division frames include a tactile long-division area with space for the divisor, dividend, partial quotients, and final answer.
 The project includes 3D-print files for a small lidded carrier and number tiles (0–9) plus operation tiles and blank filler tiles. Files are provided in both braille (UEB and Nemeth) and print-friendly versions. You can print using two filament colors to make the tactile frames and printed markings easy to distinguish for students with different needs.
-
+<!--more-->
 ### Example images
 
 - Addition/Subtraction Frame (UEB braille)

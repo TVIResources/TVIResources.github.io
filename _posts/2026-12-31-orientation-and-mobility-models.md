@@ -14,7 +14,7 @@ search: exclude
 ## I
 Why learning intersection and route shapes matters
 Understanding the geometry of intersections and the overall shapes that routes take is a foundational spatial skill for safe, confident travel. For people who are blind, the world is experienced sequentially and through non-visual cues; that makes it harder to form a clear, global picture of a junction or a multi-leg route from a single walk-through. When students can mentally “see” a T, four‑way, roundabout, skewed junction, or an S‑shaped route, they can predict likely hazards, plan where to pause, decide which sound or tactile landmark will confirm a turn, and estimate where to reorient if something unexpected happens. Those predictions directly improve safety, reduce anxiety, and speed independent decision-making.
-
+<!--more-->
 How simple overhead 3D/tactile models help
 Simple overhead 3D models translate abstract, often complex spatial layouts into a tactile domain the student can explore with hands. Feeling the angles, curb alignments, medians, and crosswalk positions gives a concrete reference for terms that otherwise remain theoretical. Tactile models reduce cognitive load: instead of trying to build a mental map from fragmented cues (traffic sounds, cane contacts, verbal descriptions), students can form a stable schema of “what a roundabout feels like” or “how an offset T differs from a regular T.” That stable schema makes it easier to recognize those shapes in real environments and to transfer planning strategies learned in the classroom to street crossings.
 

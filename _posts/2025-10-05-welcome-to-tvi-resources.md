@@ -18,7 +18,7 @@ What you’ll find here:
 
 - Printable and modifiable templates (PDF/SVG) for tactile diagrams, manipulatives, and enlarged text.
 - 3D models (.STL) and build notes for low-cost tactile objects you can print or reproduce locally.
-- Small scripts and source files (Python, shell, or simple web tools) that let you generate accessible versions of common classroom materials with minimal setup.
+- Small scripts and source files (Python, windows or linux shell, or simple web tools) that let you generate accessible versions of common classroom materials with minimal setup.
 - Practical tips for making tactile graphics, labeling, and low-tech adaptations that work in real classrooms.
 
 ## Why Open Source Resources?
