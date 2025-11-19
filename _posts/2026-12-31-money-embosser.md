@@ -17,4 +17,3 @@ search: exclude
 
 <!--more-->
 
-{% include staticman-form.html %}

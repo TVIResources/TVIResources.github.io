@@ -15,34 +15,107 @@ Many teachers encounter graphs in textbooks, reports, or PDFs that lack the unde
 
 <!--more-->
 
-## What this tool offers
+## Graph Digitizer — Java 21 Edition (1.0-beta)
 
-- Load PNG/JPEG images and view them on a zoomable canvas so you can inspect fine detail.
-- Quick calibration: mark four anchor pixels (left/right X and bottom/top Y) and enter their numeric values; the app converts pixels to data automatically.
-- Point-and-click capture: click to record points, drag to adjust, and delete mistakes with a button or the keyboard.
-- Optional auto-trace: extract a curve automatically when it is visually distinct (different color) from the background.
-- Multiple datasets: manage more than one curve in the same image and export them together.
-- Export options: CSV for immediate spreadsheet use, JSON/project save to preserve axis metadata and colors.
+This project has moved to a modern Java 21 / JavaFX implementation. The release available in this repo is a Java-based desktop application (version **1.0**) intended for teachers and researchers who need an easy way to extract numeric data from raster images of graphs.
 
-## A teacher-friendly workflow (5 minutes)
+If you prefer a quick run without building from source, the README includes downloadable artifacts and packaging instructions. Developers and power users can build and run the application locally (see commands below).
 
-1. Open Graph Digitizer and click **Load Image**.
-2. Click **Calibrate** and follow the prompts to click the four axis anchor pixels, then type the real numeric values.
-3. Choose a dataset (one per curve), then click points on the curve to capture them. Use the precision zoom or zoom controls for tight areas.
-4. Optionally use **Auto-trace** for clearly colored curves to populate many points at once.
-5. Click **Save → CSV** to download a spreadsheet-ready file and open it in Excel or Google Sheets.
+## Documentation and downloads
 
-This workflow intentionally avoids command-line steps for everyday use. If you want to install and run the app locally, the repository's README includes straightforward one-line commands and platform notes.
+- Quick Reference Guide: `QUICK_REFERENCE.md` — keyboard shortcuts and common tasks
+- Developer Guide: `DEVELOPER.md` — architecture and extension points
+- Accessibility docs: `ACCESSIBILITY.md`, `ACCESSIBILITY_QUICK_START.md`, and `ACCESSIBILITY_IMPLEMENTATION_COMPLETE.md` (audit fixes applied)
+- Packaging & Distribution: `packaging/README.md` — instructions for creating AppImage/DEB/RPM/DMG/EXE installers
 
-## Practical notes and tips
+You can run the packaged JAR (after building) with:
 
-- CSV vs JSON: CSV is the easiest to share with colleagues and to import into lesson plans; JSON saves the full project state if you want to return and edit later.
-- When auto-trace doesn't capture the curve perfectly, use point-and-click to correct gaps or outliers.
-- For logarithmic plots, be sure to select the log option before exporting so axis transforms are preserved in JSON (CSV will contain the data values).
-- The app is cross-platform (Windows/macOS/Linux). The README has simple setup instructions if you need them; you don't need to understand Julia to use the GUI after it's running.
+```bash
+java -jar target/graph_digitizer_1.0-beta.jar
+```
 
-## Want to try it?
+Or run directly from Maven while developing:
 
-Download or browse the project on GitHub: [Graph Digitizer repository](https://github.com/TVIResources/Graph_Digitizer). The repo contains a full README, examples, and troubleshooting notes. If you try the tool and have feedback or a teaching example to share, please open an issue or leave a comment — real classroom examples help prioritize improvements.
+```bash
+mvn javafx:run
+```
 
-If you'd like, I can add a short screenshot and an example CSV preview to this post so teachers can quickly see what the output looks like before downloading.
+If you want a single distributable for end users, see the Packaging & Distribution docs for `jlink` + `jpackage` recipes.
+
+## Quick start (teacher-friendly)
+
+1. Install Java 21 (or later) on your computer. If you don't have Java installed, the packaging instructions describe creating a self-contained installer so students don't need Java installed.
+   - For most of you on Windows 11 the easiest way will be to do the following:
+     - Open your terminal or command prompt
+     - Type the following command and press enter:
+      
+      ```ps1
+       winget install Microsoft.OpenJDK.21
+       ```
+     - After installation is complete, you can verify Java is installed by typing the following command and pressing enter:
+     
+     ```ps1
+      java -version
+     ```
+2. Download or clone the repository and follow the README to open the app or run the provided JAR.
+3. Load a PNG or JPEG of the graph and press **Calibrate** to set four known points on the axes.
+4. Select a dataset color and click points on a curve (or use Auto-trace for clearly colored lines).
+5. Export to CSV to use in Excel/Google Sheets, or save the project as JSON to preserve axis metadata and colors.
+
+This workflow is made to avoid command-line steps for everyday classroom use — teachers can run the packaged app and use the GUI only.
+
+A quick screenshot of the application is shown below to give a sense of the interface (calibration controls at left, image/canvas in the center, and dataset controls at the right).
+
+![Graph Digitizer application window: left column contains calibration controls with four anchor-point fields and numeric axis range inputs; center shows a zoomable canvas displaying a raster graph image with overlaid color-coded data points and gridlines; right column lists dataset controls with color swatches, dataset names, visibility toggles, and export buttons. Toolbar at top shows common actions like Open, Calibrate, Auto-trace, and Export.](/assets/images/graph-digitizer/Screenshot%202025-11-19%20073537.png)
+
+*Screenshot shows a sample session. Associated sample files: [Sample_Graph_20251119-073453.json](/assets/data/Sample_Graph_20251119-073453.json) and [Sample_Graph_20251119-073453.csv](/assets/data/Sample_Graph_20251119-073453.csv).*
+
+## Example outputs and sample files
+
+Below are small sample files you can download and open to see the exact formats produced by Graph Digitizer. They live in the `assets/data` folder of this site.
+
+- General example (six datasets, 5 points each): [graph_digitizer_example.json](/assets/data/graph_digitizer_example.json) and [graph_digitizer_example.csv](/assets/data/graph_digitizer_example.csv)
+- Log-scale example (x axis logarithmic): [graph_digitizer_example_log.json](/assets/data/graph_digitizer_example_log.json) and [graph_digitizer_example_log.csv](/assets/data/graph_digitizer_example_log.csv)
+- Missing values example (nulls / empty cells): [graph_digitizer_example_missing.json](/assets/data/graph_digitizer_example_missing.json) and [graph_digitizer_example_missing.csv](/assets/data/graph_digitizer_example_missing.csv)
+
+Short CSV preview (first three rows of the general example):
+
+```csv
+x,Dataset_1,Dataset_2,Dataset_3,Dataset_4,Dataset_5,Dataset_6
+0.0,0.5,0.8,0.2,1.0,0.4,0.6
+1.0,1.2,1.5,0.9,1.9,0.7,1.1
+```
+
+Use the JSON files if you want full project metadata (axis ranges, log flags, colors) and the CSV files for quick spreadsheet analysis.
+
+First example dataset (JSON excerpt):
+
+```json
+{
+  "name": "Dataset 1",
+  "color": "#1f77b4",
+  "points": [[0.0, 0.5], [1.0, 1.2], [2.0, 2.4], [3.0, 3.1], [4.0, 4.0]]
+}
+```
+
+
+## Key features
+
+- Load PNG/JPEG images and view them on a zoomable canvas.
+- Calibration with four anchor points and numeric axis ranges (linear & log support).
+- Point-and-click capture plus drag-to-adjust and delete.
+- Auto-trace for color-distinct curves.
+- Multiple datasets (color-coded) and export to CSV and JSON.
+- Designed with accessibility in mind — see the accessibility docs for screen reader guidance and keyboard-first workflows.
+
+## Packaging notes (for IT / power users)
+
+The project includes Maven profiles and helper scripts to create a self-contained installer using `jlink`/`jpackage`, or a fat JAR using the Maven Shade plugin. See the `packaging/README.md` for platform-specific commands and signing instructions.
+
+## Want to contribute or test?
+
+- Browse the repo: [Graph Digitizer (Java) repository](https://github.com/mrhunsaker/Graph_Digitizer_Java_Implementation)
+- Report issues, request features, or share classroom examples via GitHub Issues.
+
+
+
