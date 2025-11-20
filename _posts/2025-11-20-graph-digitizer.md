@@ -116,4 +116,3 @@ The project includes Maven profiles and helper scripts to create a self-containe
 
 - Browse the repo: [Graph Digitizer (Java) repository](https://github.com/mrhunsaker/Graph_Digitizer_Java_Implementation)
 - Report issues, request features, or share classroom examples via GitHub Issues.
-
