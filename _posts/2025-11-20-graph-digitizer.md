@@ -15,9 +15,9 @@ Many teachers encounter graphs in textbooks, reports, or PDFs that lack the unde
 
 <!--more-->
 
-## Graph Digitizer — Java 21 Edition (1.0-beta)
+## Graph Digitizer v1.1 — Java 21 Edition
 
-This project has moved to a modern Java 21 / JavaFX implementation. The release available in this repo is a Java-based desktop application (version **1.0**) intended for teachers and researchers who need an easy way to extract numeric data from raster images of graphs.
+This project has moved to a modern Java 21 / JavaFX implementation. The release available in this repo is a Java-based desktop application intended for teachers and researchers who need an easy way to extract numeric data from raster images of graphs.
 
 If you prefer a quick run without building from source, the README includes downloadable artifacts and packaging instructions. Developers and power users can build and run the application locally (see commands below).
 
