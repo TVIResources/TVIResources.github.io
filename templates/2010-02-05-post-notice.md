@@ -68,4 +68,3 @@ Or you could skip the capture and stick with straight HTML.
 </div>
 
 
-{% include staticman-form.html %} 

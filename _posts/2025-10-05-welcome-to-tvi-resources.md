@@ -6,6 +6,7 @@ categories:
 tags:
   - information
   - introduction
+comments: true
 ---
 
 ## Overview
@@ -48,5 +49,4 @@ Providing resources at low or no cost and publishing the processes to recreate t
 If you adapt or improve a resource here, please share your files, short notes, or revised instructions. Even a one-paragraph classroom note — what worked, what you'd change, which students benefited most — is incredibly valuable. We encourage contributors to publish their materials under an open license (for example, Creative Commons) so others can reuse and adapt them freely.
 
 By keeping costs low and opening up the how-to, TVI Resources aims to empower teachers, amplify practical innovations, and create a living library of tools that grow with classroom experience.
-
 

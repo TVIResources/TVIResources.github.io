@@ -10,6 +10,7 @@ tags:
   - instructional materials
   - braille
 search: exclude
+comments: true
 ---
 
 These structured math frames grew out of a common and persistent challenge: visually impaired and blind students often struggle to learn the vertical alignment of numbers required for addition, subtraction, and especially multi-digit multiplication. For sighted students, graph paper or lined columns provide an immediate visual guide to keep digits under one another. A student using a Perkins braillewriter, however, must manage both the math and the tactile formatting simultaneously — keeping place value columns aligned while also composing braille. That extra layer of formatting work frequently competes with the cognitive load of solving the problem itself.

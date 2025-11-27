@@ -13,6 +13,7 @@ tags:
   - software
   - coding
 search: exclude
+comments: true
 ---
 
 StudentDataGUI is a focused student-management application designed for teachers, TVIs, O&M specialists, and other professionals who support students who are blind or visually impaired. It centralizes per-student records (assessments, session notes, accommodations, braille samples, assistive-technology settings, and attached artifacts) into a simple GUI backed by a local database and portable JSON exports. The interface is organized around individual student folders and timeline entries so you can quickly find historical documents, generate reports, and create backups — all without needing a separate record-keeping system.

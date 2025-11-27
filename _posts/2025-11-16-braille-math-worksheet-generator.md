@@ -11,6 +11,7 @@ tags:
   - powershell
   - coding
   - braille
+comments: true
 ---
 
 Creating braille math worksheets is both time-consuming and technically demanding. Unified English braille (UEB) technical/math formatting uses precise conventions and translator-sensitive symbols; small differences in punctuation, spacing, or symbol choice can produce incorrect translation or loss of meaning in braille. Many teachers still start with printable sources (for example, Math Drills) and then manually transcribe or translate each worksheet; a slow, error-prone process that is difficult to scale.
@@ -114,5 +115,4 @@ Further instructions and details about the script's functionality can be found i
 You are free to modify the script to suit your needs. The project is open-source, and contributions are welcome. If you have ideas for new features or improvements, or if you find any bugs, please let us know by [submitting an issue on GitHub](https://github.com/TVIResources/BrailleMathWorksheetGenerator) or leaving a comment below. I appreciate your feedback and will do my best to address issues promptly. You are also welcome to fork the repository and submit pull requests directly with your changes.
 
 A quick note about notation variants: I would very much like to provide a Nemeth-version of this generator, but I haven't had the time or sufficient requests to prioritize it. Utah is a mixed UEB/Nemeth state and individual LEAs choose which code they implement; if your district needs Nemeth output (or you can share examples of local requirements), please contact me or open an issue — that will help me prioritize a Nemeth conversion. It will always be a Nemeth *option* to go along with UEB as I believe there is place for both codes to co-exist within the BANA UEB framework. 
-
 

@@ -10,10 +10,6 @@ tags:
   - inkscape
   - openscad
 search: exclude
+comments: true
 ---
 
-
-
-
-
-{% include staticman-form.html %} 

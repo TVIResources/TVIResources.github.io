@@ -9,6 +9,7 @@ tags:
   - orientation and mobility
   - instructional materials
 search: exclude
+comments: true
 ---
 
 Understanding intersection geometry and route shapes is a foundational spatial skill for safe, confident travel. For people who are blind or visually impaired, environments are experienced sequentially and through non-visual cues; that makes it harder to form a clear, global picture of a junction or a multi-leg route from a single walk-through. Simple overhead tactile models translate fleeting spatial layouts into repeatable, touchable references students can explore with their hands.

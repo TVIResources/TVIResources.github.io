@@ -10,5 +10,7 @@ tags:
   - inkscape
   - openscad
 search: exclude
+comments: true
+
 ---
 

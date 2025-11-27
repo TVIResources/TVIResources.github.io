@@ -69,6 +69,12 @@ author:
         - label: "GitHub"
           icon: "fab fa-fw fa-github"
           url: "https://github.com/mrhunsaker"
+        - label: "Thingiverse"
+          icon: "fas fa-fw fa-gear"
+          url: "https://www.thingiverse.com/TVI_Resources/designs"
+        - label: "MakerWorld"
+          icon: "fas fa-fw fa-gear"
+          url: "https://makerworld.com/en/@user_657113522"
 
 footer:
     links:
@@ -98,24 +104,10 @@ defaults:
 
 comments:
     enabled: true
-    provider: staticman_v2
-    staticman:
-        branch: "main"
-        endpoint: "https://staticman3.herokuapp.com/v3/entry/TVIResources/TVIResources.github.io/main"
-        commit_message: "New comment from {{ fields.name }}"
-        filename: comment-{@timestamp}
-        format: "yml"
-        moderation: true
-        allowedFields: ["name", "email", "message"]
-        requiredFields: ["name", "email", "message"]
-        path: "_data/comments"
-        transforms:
-            email: "md5"
-        generatedFields:
-            date:
-                type: "date"
-                options:
-                    format: "iso8601"
+    provider: "disqus"
+    disqus:
+        shortname: "tviresources"
+
 category_archive:
     type: liquid
     path: /categories/

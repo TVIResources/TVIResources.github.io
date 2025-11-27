@@ -1,7 +1,0 @@
-<form id="new_comment" method="POST" action="{{ site.comments.staticman.endpoint }}">
-  <input name="fields[name]" type="text" required placeholder="Your name">
-  <input name="fields[email]" type="email" required placeholder="Your email">
-  <textarea name="fields[message]" required placeholder="Your comment"></textarea>
-  <input type="hidden" name="options[slug]" value="{{ page.slug }}" />
-  <button id="comment-form-submit" type="submit">Submit</button>
-</form>
