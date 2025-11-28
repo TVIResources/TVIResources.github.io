@@ -12,7 +12,7 @@ tags:
   - inkscape
   - openscad
   - assistive technology
-search: exclude
+comments: true
 ---
 
 When teaching students who are blind or visually impaired to use screen readers, one of the challenges is helping them understand the layout of a computer screen. While screen readers provide auditory feedback, having a tactile representation of the screen can significantly enhance comprehension and navigation skills. Unfortunately, screenreader instruction often does not explicitly teach navigation based on what are typical patterns and structures commonly used by web developers. Instead, well-meaning sighted colleagues and teachers often point to the screen and say something like, "Just go to the link on the top right", to the student. This is often extremely confusing to the student that may likely lack the clear mental model of the screen's layout. The result is that students press `Control+Home` to get to the top of the page and then just start pressing the `Tab` key repeatedly until they find what they are looking for, which is inefficient, frustrating, and ultimately demotivating.

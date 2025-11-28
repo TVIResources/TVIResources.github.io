@@ -10,6 +10,7 @@ tags:
   - statistics
   - data extraction
   - software
+comments: true
 ---
 
 Many teachers encounter graphs in textbooks, reports, or PDFs that lack the underlying numbers. Graph Digitizer is a compact, easy-to-use GUI that sits between a quick demo and a full-featured extractor: it provides a simple point-and-click workflow (load an image, calibrate axes, click or auto-trace points) for non-technical users while still offering optional advanced features when needed.
