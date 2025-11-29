@@ -145,3 +145,46 @@ This course is an open educational resource, and contributions are welcome. If y
 - Examples of successful classroom implementations with blind or visually impaired students.
 
 I am particularly interested in feedback from students and educators who use the course. If you encounter sections that are unclear, exercises that are difficult to complete with a screenreader, or features that would improve the learning experience, please let me know by opening an issue or leaving a comment below. Your input helps make programming education more accessible for all learners. I am planning on keeping this course updated as I use it every year or so to teach students who are blind/visually impaired programming skills, but by no means is this tool only intended for them, it is intended for anyone wanting to learn. 
+
+<!-- Remarkbox - Your readers want to communicate with you -->
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true&mode=light" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+<script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script>
+  var rb_owner_key = "a11e8d2f-cd40-11f0-ad89-040140774501";
+  var thread_uri = window.location.href;
+  var thread_title = window.document.title;
+  var thread_fragment = window.location.hash;
+
+  // rb owner was here.
+  var rb_src = "https://my.remarkbox.com/embed" +
+      "?rb_owner_key=" + rb_owner_key +
+      "&thread_title=" + encodeURI(thread_title) +
+      "&thread_uri=" + encodeURIComponent(thread_uri) +
+      "&mode=light" +
+      thread_fragment;
+
+  function create_remarkbox_iframe() {
+    var ifrm = document.createElement("iframe");
+    ifrm.setAttribute("id", "remarkbox-iframe");
+    ifrm.setAttribute("scrolling", "no");
+    ifrm.setAttribute("src", rb_src);
+    ifrm.setAttribute("frameborder", "0");
+    ifrm.setAttribute("tabindex", "0");
+    ifrm.setAttribute("title", "Remarkbox");
+    ifrm.style.width = "100%";
+    document.getElementById("remarkbox-div").appendChild(ifrm);
+  }
+  create_remarkbox_iframe();
+  iFrameResize(
+    {
+      checkOrigin: ["https://my.remarkbox.com"],
+      inPageLinks: true,
+      initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
+    },
+    document.getElementById("remarkbox-iframe")
+  );
+</script>
