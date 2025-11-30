@@ -12,6 +12,8 @@ tags:
   - vscode
   - accessible education
 comments: true
+last_updates_at: 2025-11-30
+
 ---
 
 Teaching Python to students who use screenreaders presents unique challenges. Traditional programming courses rely heavily on visual code formatting, graphical output, and GUI-based development environments that create barriers for blind and visually impaired learners. Many introductory computer science curricula include graphics libraries like turtle that are inaccessible to screenreader users, and online coding platforms often have terminal output that screenreaders cannot read effectively. Options that are available from the American Printing House for the Blind like Code Jumper bypass this using physical items or a rigorously predefined set of options that make it useful for learning concepts like for loops, while loops, and threading, but do not allow stduents to flexibly solve coding problems. 
@@ -145,6 +147,10 @@ This course is an open educational resource, and contributions are welcome. If y
 - Examples of successful classroom implementations with blind or visually impaired students.
 
 I am particularly interested in feedback from students and educators who use the course. If you encounter sections that are unclear, exercises that are difficult to complete with a screenreader, or features that would improve the learning experience, please let me know by opening an issue or leaving a comment below. Your input helps make programming education more accessible for all learners. I am planning on keeping this course updated as I use it every year or so to teach students who are blind/visually impaired programming skills, but by no means is this tool only intended for them, it is intended for anyone wanting to learn. 
+
+## Leave a Comment
+
+Note, I use [Remarkbox](https://www.remarkbox.com/) for comments to prevent Disqus from showing adds or other methods requiring a GitHub login for participation in any discussions. Although you are asked for you email, there is no need to verify it through remarkbox in order to leave a comment. Verification is just so you can track discussions, etc. without the system treating you as a new person every time.  
 
 <!-- Remarkbox - Your readers want to communicate with you -->
 <div id="remarkbox-div">
