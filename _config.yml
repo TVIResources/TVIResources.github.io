@@ -116,6 +116,7 @@ defaults:
 
 
 comments:
+    provider: "custom"
     enabled: true
 
 category_archive:
