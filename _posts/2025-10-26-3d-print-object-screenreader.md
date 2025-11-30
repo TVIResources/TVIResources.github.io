@@ -13,6 +13,11 @@ tags:
   - openscad
   - assistive technology
 comments: true
+share: true
+read_time: true
+related: true
+last_updates_at: 2025-11-30
+
 ---
 
 When teaching students who are blind or visually impaired to use screen readers, one of the challenges is helping them understand the layout of a computer screen. While screen readers provide auditory feedback, having a tactile representation of the screen can significantly enhance comprehension and navigation skills. Unfortunately, screenreader instruction often does not explicitly teach navigation based on what are typical patterns and structures commonly used by web developers. Instead, well-meaning sighted colleagues and teachers often point to the screen and say something like, "Just go to the link on the top right", to the student. This is often extremely confusing to the student that may likely lack the clear mental model of the screen's layout. The result is that students press `Control+Home` to get to the top of the page and then just start pressing the `Tab` key repeatedly until they find what they are looking for, which is inefficient, frustrating, and ultimately demotivating.
@@ -187,3 +192,50 @@ design = "CavasDashboard"; // [
 - Once the model is rendered, press `F7` to save the 3D model file as an stl file. Name the file according to your design (e.g., `MYNEWDESIGN.stl`) and save it in the `Final3dPrintFiles` folder.
 
 If any of this is too difficult feel free to post a comment below and/or  [contact me](mailto:ryhunsaker@dsdmail.net?subject=Tactile%20Graphics%20For%20Screenreaders%20Question) and I can answer any questions directly.
+
+## Leave a Comment
+
+Note, I use [Remarkbox](https://www.remarkbox.com/) for comments to prevent Disqus from showing adds or other methods requiring a GitHub login for participation in any discussions. Although you are asked for you email, there is no need to verify it through remarkbox in order to leave a comment. Verification is just so you can track discussions, etc. without the system treating you as a new person every time.  
+
+<!-- Remarkbox - Your readers want to communicate with you -->
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true&mode=light" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+<script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script>
+  var rb_owner_key = "a11e8d2f-cd40-11f0-ad89-040140774501";
+  var thread_uri = window.location.href;
+  var thread_title = window.document.title;
+  var thread_fragment = window.location.hash;
+
+  // rb owner was here.
+  var rb_src = "https://my.remarkbox.com/embed" +
+      "?rb_owner_key=" + rb_owner_key +
+      "&thread_title=" + encodeURI(thread_title) +
+      "&thread_uri=" + encodeURIComponent(thread_uri) +
+      "&mode=light" +
+      thread_fragment;
+
+  function create_remarkbox_iframe() {
+    var ifrm = document.createElement("iframe");
+    ifrm.setAttribute("id", "remarkbox-iframe");
+    ifrm.setAttribute("scrolling", "no");
+    ifrm.setAttribute("src", rb_src);
+    ifrm.setAttribute("frameborder", "0");
+    ifrm.setAttribute("tabindex", "0");
+    ifrm.setAttribute("title", "Remarkbox");
+    ifrm.style.width = "100%";
+    document.getElementById("remarkbox-div").appendChild(ifrm);
+  }
+  create_remarkbox_iframe();
+  iFrameResize(
+    {
+      checkOrigin: ["https://my.remarkbox.com"],
+      inPageLinks: true,
+      initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
+    },
+    document.getElementById("remarkbox-iframe")
+  );
+</script>

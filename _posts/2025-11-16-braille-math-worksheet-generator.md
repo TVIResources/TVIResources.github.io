@@ -12,6 +12,11 @@ tags:
   - coding
   - braille
 comments: true
+share: true
+read_time: true
+related: true
+last_updates_at: 2025-11-30
+
 ---
 
 Creating braille math worksheets is both time-consuming and technically demanding. Unified English braille (UEB) technical/math formatting uses precise conventions and translator-sensitive symbols; small differences in punctuation, spacing, or symbol choice can produce incorrect translation or loss of meaning in braille. Many teachers still start with printable sources (for example, Math Drills) and then manually transcribe or translate each worksheet; a slow, error-prone process that is difficult to scale.
@@ -116,3 +121,49 @@ You are free to modify the script to suit your needs. The project is open-source
 
 A quick note about notation variants: I would very much like to provide a Nemeth-version of this generator, but I haven't had the time or sufficient requests to prioritize it. Utah is a mixed UEB/Nemeth state and individual LEAs choose which code they implement; if your district needs Nemeth output (or you can share examples of local requirements), please contact me or open an issue — that will help me prioritize a Nemeth conversion. It will always be a Nemeth *option* to go along with UEB as I believe there is place for both codes to co-exist within the BANA UEB framework. 
 
+## Leave a Comment
+
+Note, I use [Remarkbox](https://www.remarkbox.com/) for comments to prevent Disqus from showing adds or other methods requiring a GitHub login for participation in any discussions. Although you are asked for you email, there is no need to verify it through remarkbox in order to leave a comment. Verification is just so you can track discussions, etc. without the system treating you as a new person every time.  
+
+<!-- Remarkbox - Your readers want to communicate with you -->
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true&mode=light" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+<script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script>
+  var rb_owner_key = "a11e8d2f-cd40-11f0-ad89-040140774501";
+  var thread_uri = window.location.href;
+  var thread_title = window.document.title;
+  var thread_fragment = window.location.hash;
+
+  // rb owner was here.
+  var rb_src = "https://my.remarkbox.com/embed" +
+      "?rb_owner_key=" + rb_owner_key +
+      "&thread_title=" + encodeURI(thread_title) +
+      "&thread_uri=" + encodeURIComponent(thread_uri) +
+      "&mode=light" +
+      thread_fragment;
+
+  function create_remarkbox_iframe() {
+    var ifrm = document.createElement("iframe");
+    ifrm.setAttribute("id", "remarkbox-iframe");
+    ifrm.setAttribute("scrolling", "no");
+    ifrm.setAttribute("src", rb_src);
+    ifrm.setAttribute("frameborder", "0");
+    ifrm.setAttribute("tabindex", "0");
+    ifrm.setAttribute("title", "Remarkbox");
+    ifrm.style.width = "100%";
+    document.getElementById("remarkbox-div").appendChild(ifrm);
+  }
+  create_remarkbox_iframe();
+  iFrameResize(
+    {
+      checkOrigin: ["https://my.remarkbox.com"],
+      inPageLinks: true,
+      initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
+    },
+    document.getElementById("remarkbox-iframe")
+  );
+</script>
