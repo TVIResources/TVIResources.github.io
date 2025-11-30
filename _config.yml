@@ -104,7 +104,6 @@ defaults:
 
 comments:
     enabled: true
-    provider: "remarkbox"
 
 category_archive:
     type: liquid
