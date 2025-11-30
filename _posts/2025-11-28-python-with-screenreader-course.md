@@ -12,6 +12,9 @@ tags:
   - vscode
   - accessible education
 comments: true
+share: true
+read_time: true
+related: true
 last_updates_at: 2025-11-30
 
 ---
