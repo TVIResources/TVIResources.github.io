@@ -17,7 +17,7 @@ title: "TVI Resources"
 subtitle: "Practical resources for teachers of students with visual impairments"
 email: ryhunsaker@dsdsmail.net
 description: >-
-    Practical resources for teachers of students with visual impairments
+    Practical 3d printing and software solutions for teachers of students with visual impairments and blindness
 url: https://tviresources.github.io
 copyright: "TVI Resources"
 github_username: TVIResources
@@ -115,8 +115,8 @@ defaults:
           layout: single
           author_profile: true
           enable_copy_code_button: true
-google_site_verification: "google-site-verification=pDGXVsVdocK2DnzWktT-3WC1o7qZBrfc1S-3-aTylZc"
-
+google_site_verification: "pDGXVsVdocK2DnzWktT-3WC1o7qZBrfc1S-3-aTylZc"
+bing_site_verification: "305890C07AABA443F5BBF3A49958C599"
 comments:
     provider: "custom"
     enabled: true

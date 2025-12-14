@@ -12,7 +12,6 @@ tags:
   - plotting
   - software
   - coding
-search: exclude
 comments: true
 ---
 
