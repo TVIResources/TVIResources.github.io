@@ -115,7 +115,7 @@ defaults:
           layout: single
           author_profile: true
           enable_copy_code_button: true
-
+google_site_verification: "google-site-verification=pDGXVsVdocK2DnzWktT-3WC1o7qZBrfc1S-3-aTylZc"
 
 comments:
     provider: "custom"
