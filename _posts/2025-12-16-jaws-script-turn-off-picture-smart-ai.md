@@ -1,0 +1,256 @@
+---
+title: "How to Write a JAWS Script to Turn Off Picture Smart AI On Certain Sites"
+date: 2025-12-16
+categories:
+  - blog
+tags:
+  - screenreader
+  - scripting
+comments: true
+---
+
+JAWS scripting is essential for accessibility because it lets educators and users tailor screen reader behavior to real classroom needs. These small changes make screen reading predictable, efficient, and aligned with instruction. Teachers can reduce distractions, preserve trusted shortcuts, and keep students focused on content. Importantly, scripting improves equity by adapting tools to the environment instead of forcing one-size-fits-all defaults.
+
+However, in the JAWS 2026 release, there is a bug in the system that allows ChatGPT chat access using the JAWS Viewer if you ask for more information about the control you selected
+
+Here is the example video I recorded on my computer using a browser that has ChatGPT, Gemini AI, Claude AI, FS Connect, etc. all blocked. Turn the volume up and listen closely as the audio is the Voice from my JAWS installation.  And yes, I am asking the iconic Monty Python swallow question since it clearly has nothing to do with the image selected to OCR using the AI. 
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe
+        src="https://www.youtube.com/embed/-syFJPBC1k4"
+        title="JAWS Picture Smart AI bypassing district firewall to access ChatGPT"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        loading="lazy"
+    ></iframe>
+</div>
+
+It is critical to ensure features that leverage AI are not inadvertently available in restricted environments for students with visual impairments while they are unavailable to sighted peers. Schools may require consistent, non‑AI image interpretation during assessments or on specific platforms--which is available as the legacy Picture Smart OCR, and scripts help enforce those rules. At the same time, educators can keep AI-enabled features available outside restricted contexts, where creative descriptions and exploration are appropriate. This balanced approach respects policy, protects test integrity, and preserves useful tools for daily learning.
+
+<!--more-->
+
+## Why this helps
+
+- Reduce AI usage in specific testing environments, while keeping flexibility
+- Prevent confusion from potentially inconsistent image descriptions produced by AI
+- Maintain access to Legacy OCR for predictable results
+- Avoid heavy-handed changes such as disabling all external services using custom installation protocols.
+
+## What students gain
+
+- Consistent image reading experience during assessments or classwork
+- Confidence that expected keystrokes still work
+- A reliable workflow for reading images available when needed during potentially inaccessible testing environments. 
+
+## Features
+
+- Targeted site control: choose domains where Legacy OCR is enforced and it is enforced *only* on thsoe domains.
+- Lightweight scripts: instructions on how to create these scripts and how to inactivate them. 
+- No global lockout: Picture Smart AI remains available elsewhere
+- Keyboard continuity: `JAWSKEY+SPACE,P,C` still triggers Legacy Picture Smart on the selected Control element.
+
+## Getting started: Script Manager and compilation
+
+### Open Script Manager for Chrome and Firefox, then save to User Settings
+
+#### Method 1:
+
+1. Press `Windows` and type `JAWS XXXX` (replace `XXXX` with your version)
+2. Choose `Utilities - JAWS XXXX`, then select `Script Manager`
+3. In Script Manager, go to `File > Open`
+4. For Chrome: open the Chrome browser script (`chrome.jss`). For Firefox: open the Firefox browser script (`firefox.jss`)
+5. Immediately click the Save As User option.  
+
+#### Method 2:
+
+1. Press `Windows` and type `JAWS XXXX` (replace `XXXX` with your version) to open JAWS
+2. Open the browser of choice
+3. Press `JAWS KEY + 0` to open the Script Manager and load the application's script file
+4. Immediately click the Save As User option
+5. Repeat for both `chrome` and `firefox` browsers
+
+### Make the domain changes and compile
+
+1. For each script, locate `PictureSmartWithControl` and `PictureSmartWithControlMultiService`. They are right after each other, so I would just search the first.
+2. Insert the domain check from the examples below, replacing `"YOUR-DOMAIN-HERE"` with your target site text (for example, `"instructure"`, `blackboard`, `classroom`, `"powerschool"`, `"moodle"`, `"d2l"`, or custom district LMS).
+3. Save the `.jss` file with Save As User.
+4. Compile: go to `Script > Compile` (or press `Ctrl+Shift+C`). This produces `chrome.jsb` or `firefox.jsb` in the same user settings folder. Technically `Control+S` does this as well, but I always do both. (I also press Control+S to save when I have auto-save enabled. I am just that kind of person)
+5. Verify the `.jsb` files exist in `"%APPDATA%\Roaming\Freedom Scientific\JAWS\XXXX\Settings\enu"`. Restart JAWS or reload scripts if needed.
+
+## Code structure and behavior
+
+The scripts check the current site domain. If it matches a domain you specify, they force Legacy OCR. Otherwise, they keep AI-enabled options.
+
+Original code:
+
+~~~vb
+Script PictureSmartWithControl (optional int serviceOptions)
+return PictureSmartWithControlShared (PSServiceOptions_Single | serviceOptions)
+EndScript
+
+Script PictureSmartWithControlMultiService (optional int serviceOptions)
+return PictureSmartWithControlShared (PSServiceOptions_Multi | serviceOptions)
+EndScript
+~~~
+
+Generalized edited code (domain-controlled) with 1 domain (i.e., "instructure", "blackboard", etc...):
+
+~~~vb
+Script PictureSmartWithControl (optional int serviceOptions)
+    var
+        string SDomain
+    let SDomain = GetDomainName()
+    if StringContains (SDomain, "YOUR-DOMAIN-HERE") || then
+        SayFormattedMessage(OT_Message, "AI components of Picture Smart are disabled on this site")
+        return PictureSmartWithControlShared (PSServiceOptions_Legacy | serviceOptions)
+    else
+        return PictureSmartWithControlShared (PSServiceOptions_Single | serviceOptions)
+    endIf
+endScript
+
+Script PictureSmartWithControlMultiService (optional int serviceOptions)
+    var
+        string SDomain
+    let SDomain = GetDomainName()
+    if StringContains (SDomain, "YOUR-DOMAIN-HERE") then
+        SayFormattedMessage(OT_Message, "AI components of Picture Smart are disabled on this site")
+        return PictureSmartWithControlShared (PSServiceOptions_Legacy | serviceOptions)
+    else
+        return PictureSmartWithControlShared (PSServiceOptions_Multi | serviceOptions)
+    endIf
+endScript
+~~~
+
+Generalized edited code (domain-controlled) with 2+ domains (i.e., "instructure", "blackboard", etc...). Just add more `|| StringContains (SDomain, "YOUR-DOMAIN-HERE")` for each additional domain:
+
+~~~vb
+Script PictureSmartWithControl (optional int serviceOptions)
+    var
+        string SDomain
+    let SDomain = GetDomainName()
+    if StringContains (SDomain, "YOUR-DOMAIN-HERE") || StringContains (SDomain, "YOUR-DOMAIN-HERE") || then
+        SayFormattedMessage(OT_Message, "AI components of Picture Smart are disabled on this site")
+        return PictureSmartWithControlShared (PSServiceOptions_Legacy | serviceOptions)
+    else
+        return PictureSmartWithControlShared (PSServiceOptions_Single | serviceOptions)
+    endIf
+endScript
+
+Script PictureSmartWithControlMultiService (optional int serviceOptions)
+    var
+        string SDomain
+    let SDomain = GetDomainName()
+    if StringContains (SDomain, "YOUR-DOMAIN-HERE") then
+        SayFormattedMessage(OT_Message, "AI components of Picture Smart are disabled on this site")
+        return PictureSmartWithControlShared (PSServiceOptions_Legacy | serviceOptions)
+    else
+        return PictureSmartWithControlShared (PSServiceOptions_Multi | serviceOptions)
+    endIf
+endScript
+~~~
+
+Notes:
+
+- Replace `"YOUR-DOMAIN-HERE"` with any substring of the target site, for example `"instructure"`, or a district LMS domain.
+- You can also edit the message in `SayFormattedMessage(OT,Message,"AI components of Picture Smart are disabled on this site")` to whatever you like. Remember that the student needs to hear this, so you can weither use my default comment or have it say `"Legacy Picture Smart"`
+- `JAWSKEY+SPACE,P,C` still triggers Legacy Picture Smart as before AI was added.
+- `JAWSKEY+J, Alt, U, P` opens Picture Smart; it is unchanged.
+- To make life easy, I surround my changes with semicolon delimited comments "signing" my changes so they are easy to find later. Below is the text frommy `firefox.jss` file with the original and my edits. So the semicolons can simply be deleted to reset default function. And my additions can be commented out. 
+
+~~~vb
+;; domain specific adjustment for LMS to turn off PictureSmart AI functions: Firefox Browser (valid for any Firefox-based Browser)
+;; adding funtion to return values to following scripts
+;;
+;; Original Code:
+;;
+;; Script PictureSmartWithControl (optional int serviceOptions)
+;;	return PictureSmartWithControlShared (PSServiceOptions_Single | serviceOptions)
+;; endScript
+;;
+;; Script PictureSmartWithControlMultiService (optional int serviceOptions)
+;; return PictureSmartWithControlShared (PSServiceOptions_Multi | serviceOptions)
+;; endScript
+;;
+;; Patched Code:
+Script PictureSmartWithControl (optional int serviceOptions)
+var
+	string SDomain
+let SDomain = GetDomainName()
+if StringContains (SDomain, "instructure") then
+	SayFormattedMessage(OT_Message, "The AI Components of Picture Smart Ai are disabled within the Canvas LMS")
+	return PictureSmartWithControlShared (PSServiceOptions_Legacy | serviceOptions)
+else
+	return PictureSmartWithControlShared (PSServiceOptions_Single | serviceOptions)
+endIf
+endScript
+
+Script PictureSmartWithControlMultiService (optional int serviceOptions)
+var
+	string SDomain
+let SDomain = GetDomainName()
+if StringContains (SDomain, "instructure") then
+	SayFormattedMessage(OT_Message, "The AI Components of Picture Smart Ai are disabled within the Canvas LMS")
+	return PictureSmartWithControlShared (PSServiceOptions_Legacy | serviceOptions)
+else
+return PictureSmartWithControlShared (PSServiceOptions_Multi | serviceOptions)
+endIf
+endScript
+;; Patched 2025-12-01 by Michael Ryan Hunsaker, M.Ed., PhD.
+;; ONLY INSTALL FILES AS USER FILES
+~~~
+
+## Customization and contribution
+
+- Suggest additional domain patterns educators need
+- Share small helper functions for matching multiple domains
+- Contribute example `.jss` snippets with clear comments
+- Open issues or pull requests if you want template checks or packaging
+
+## Leave a Comment
+
+Note, I use [Remarkbox](https://www.remarkbox.com/) for comments to prevent Disqus from showing adds or other methods requiring a GitHub login for participation in any discussions. Although you are asked for you email, there is no need to verify it through remarkbox in order to leave a comment. Verification is just so you can track discussions, etc. without the system treating you as a new person every time.  
+
+<!-- Remarkbox - Your readers want to communicate with you -->
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true&mode=light" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+<script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script>
+  var rb_owner_key = "a11e8d2f-cd40-11f0-ad89-040140774501";
+  var thread_uri = window.location.href;
+  var thread_title = window.document.title;
+  var thread_fragment = window.location.hash;
+
+  // rb owner was here.
+  var rb_src = "https://my.remarkbox.com/embed" +
+      "?rb_owner_key=" + rb_owner_key +
+      "&thread_title=" + encodeURI(thread_title) +
+      "&thread_uri=" + encodeURIComponent(thread_uri) +
+      "&mode=light" +
+      thread_fragment;
+
+  function create_remarkbox_iframe() {
+    var ifrm = document.createElement("iframe");
+    ifrm.setAttribute("id", "remarkbox-iframe");
+    ifrm.setAttribute("scrolling", "no");
+    ifrm.setAttribute("src", rb_src);
+    ifrm.setAttribute("frameborder", "0");
+    ifrm.setAttribute("tabindex", "0");
+    ifrm.setAttribute("title", "Remarkbox");
+    ifrm.style.width = "100%";
+    document.getElementById("remarkbox-div").appendChild(ifrm);
+  }
+  create_remarkbox_iframe();
+  iFrameResize(
+    {
+      checkOrigin: ["https://my.remarkbox.com"],
+      inPageLinks: true,
+      initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
+    },
+    document.getElementById("remarkbox-iframe")
+  );
+</script>

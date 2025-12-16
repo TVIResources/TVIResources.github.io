@@ -117,6 +117,7 @@ defaults:
           enable_copy_code_button: true
 google_site_verification: "pDGXVsVdocK2DnzWktT-3WC1o7qZBrfc1S-3-aTylZc"
 bing_site_verification: "305890C07AABA443F5BBF3A49958C599"
+naver_site_verification: ""
 comments:
     provider: "custom"
     enabled: true
