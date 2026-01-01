@@ -45,7 +45,7 @@ Windows example — where to place Liblouis
 
 If you extract the Windows release to your user profile, a convenient location is `%USERPROFILE%\liblouis`. 
 
-1. Extract the file using Winzip, PeaZip, 7Zip, WinRar, or any other program you use to unzip things. I always extract to my downlads folder so I do not lose things
+1. Extract the file using Winzip, PeaZip, 7Zip, WinRar, or any other program you use to unzip things. I always extract to my downloads folder so I do not lose things
 2. Move the folder to your home directory. This is the folder that has your Documents, Downloads, Photos, Videos, etc. folders in it. 
    1. You will see a folder in your home folder named something like `liblouis-3.35.0-win64`. You can rename this folder to just `liblouis` to make it easier to type later.
 3. The path  to the file you will use should look like this after you move it:

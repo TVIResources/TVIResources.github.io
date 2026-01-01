@@ -22,7 +22,7 @@ last_updates_at: 2025-11-30
 
 When teaching students who are blind or visually impaired to use screen readers, one of the challenges is helping them understand the layout of a computer screen. While screen readers provide auditory feedback, having a tactile representation of the screen can significantly enhance comprehension and navigation skills. Unfortunately, screenreader instruction often does not explicitly teach navigation based on what are typical patterns and structures commonly used by web developers. Instead, well-meaning sighted colleagues and teachers often point to the screen and say something like, "Just go to the link on the top right", to the student. This is often extremely confusing to the student that may likely lack the clear mental model of the screen's layout. The result is that students press `Control+Home` to get to the top of the page and then just start pressing the `Tab` key repeatedly until they find what they are looking for, which is inefficient, frustrating, and ultimately demotivating.
 
-As a way to address this, I have created a set of 3D printable objects that represent the different screen layouts that students commonly encounter during their school day. These tactile models are meant to be used in conjunction with guided screen reader instruction to help students visualize and understand the structure of a computer screen while they navigate and explore. To do this, students explore the tactile object as they listen to the screen reader's output based on their keyboard input, allowing them to correlate the auditory information with a physical representation that takes the palce of a visual one. This hands-on, multisensory approach makes it easier for students to grasp concepts like navigation, focus, and the arrangement of elements on a screen, enhancing their overall learning experience. This is also useful for sighted teachers who may not be familiar with screen reader layouts to guide their own understanding of navigable elements and how they are distributed on common websites.
+As a way to address this, I have created a set of 3D printable objects that represent the different screen layouts that students commonly encounter during their school day. These tactile models are meant to be used in conjunction with guided screen reader instruction to help students visualize and understand the structure of a computer screen while they navigate and explore. To do this, students explore the tactile object as they listen to the screen reader's output based on their keyboard input, allowing them to correlate the auditory information with a physical representation that takes the place of a visual one. This hands-on, multisensory approach makes it easier for students to grasp concepts like navigation, focus, and the arrangement of elements on a screen, enhancing their overall learning experience. This is also useful for sighted teachers who may not be familiar with screen reader layouts to guide their own understanding of navigable elements and how they are distributed on common websites.
 <!--more-->
 
 ## Available 3D Models
@@ -53,7 +53,7 @@ When you download the zipped folder of these models, the files that you import i
 - FileExplorerIcons.stl
   ![FileExplorerIcons](/assets/images/3dprint-screenreader/FileExplorer_Icons.png)
 - GMailOnline.stl
-  ![GMailOnline](/assets/images/3dprint-screenreader/GMailOnline.png)
+  ![GMailOnline](/assets/images/3dprint-screenreader/GmailOnline.png)
 - GoogleDocOnline.stl
   ![GoogleDocOnline](/assets/images/3dprint-screenreader/GoogleDocOnline.png)
 - GoogleHome.stl
@@ -158,7 +158,7 @@ design = "CavasDashboard"; // [
                                 WebsiteWithHeadings,
                                 WordOnline]
 ~~~
-  - Add your new design name to the list of options in the comment. If you want it to immediately show your new design in the preview without you having to select it from tyhe dropdown change the `design` parameter from "CanvasDashboard" to "MYNEWDESIGN". For example:
+  - Add your new design name to the list of options in the comment. If you want it to immediately show your new design in the preview without you having to select it from the dropdown change the `design` parameter from "CanvasDashboard" to "MYNEWDESIGN". For example:
 ~~~lua
 // Universal 3D Print Generator
 // Choose which design to render by changing the 'design' parameter
@@ -187,7 +187,7 @@ design = "CavasDashboard"; // [
                                 WordOnline,
                                 MYNEWDESIGN]
 ~~~
-- The cutomizer on the right of the screen will let you choose your new design from the dropdown menu.
+- The customizer on the right of the screen will let you choose your new design from the dropdown menu.
 - Click the Render button (or press `F6`) to generate the 3D model. Press `F6` to render the model
 - Once the model is rendered, press `F7` to save the 3D model file as an stl file. Name the file according to your design (e.g., `MYNEWDESIGN.stl`) and save it in the `Final3dPrintFiles` folder.
 
