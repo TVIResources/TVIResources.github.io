@@ -66,7 +66,7 @@ These ideas are a starting point. If you develop printable templates, lesson pla
 
 ## Leave a Comment
 
-Note, I use [Remarkbox](https://www.remarkbox.com/) for comments to prevent Disqus from showing adds or other methods requiring a GitHub login for participation in any discussions. Although you are asked for you email, there is no need to verify it through remarkbox in order to leave a comment. Verification is just so you can track discussions, etc. without the system treating you as a new person every time.  
+Note, I use [Remarkbox](https://www.remarkbox.com/) for comments to prevent Disqus from showing ads or other methods requiring a GitHub login for participation in any discussions. Although you are asked for you email, there is no need to verify it through remarkbox in order to leave a comment. Verification is just so you can track discussions, etc. without the system treating you as a new person every time.  
 
 <!-- Remarkbox - Your readers want to communicate with you -->
 <div id="remarkbox-div">
