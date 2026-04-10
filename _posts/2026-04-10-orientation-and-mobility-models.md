@@ -32,6 +32,10 @@ Understanding intersection geometry and route shapes is a foundational spatial s
 
 ## Materials & simple builds
 
+[Orientation and Mobility Route Shapes ]{https://mrhunsaker.github.io/3dprint/prints/orientation-mobility-route-shapes/}
+
+[Orientation and Mobility Intersections ]{https://mrhunsaker.github.io/3dprint/prints/orientation-mobility-intercestions/}
+
 You don't need expensive equipment. Classroom-friendly options include foam board, craft foam, cardstock, wooden dowels, and simple 3D‑printed curb overlays. Best practices:
 
 - Keep models overhead (plan view) with raised elements for curbs, medians, and crosswalks.
