@@ -35,6 +35,7 @@ remote_theme: mmistakes/minimal-mistakes
 sass:
     sass_dir: _sass
     style: compressed
+    quiet_deps: true
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
