@@ -2,7 +2,8 @@
 title: "3DMake GUI — VS Code Extension: Accessible 3D Modeling in Your Editor"
 excerpt_separator: "<!--more-->"
 date: 2026-05-27
-categories: [3D Printing, Accessibility, Tools]
+categories:
+  - blog
 tags: [3dmake, VS Code, extension, education, accessibility]
 search: include
 ---
