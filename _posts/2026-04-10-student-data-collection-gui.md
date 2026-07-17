@@ -1,7 +1,7 @@
 ---
 title: "Student Data Collection GUI"
 excerpt_separator: "<!--more-->"
-date: 2026-12-31
+date: 2026-04-10
 categories:
   - blog
 tags:
